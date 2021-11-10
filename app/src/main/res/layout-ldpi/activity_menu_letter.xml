@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?themeBackgroundColor"
+    tools:context=".MenuLetter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:background="?txtColor"
+            android:textColor="?themeBackgroundColor"
+            android:id="@+id/Listening"
+            android:text="Słuchanie"
+            style="@style/Button"/>
+        <Button
+            android:background="?txtColor"
+            android:textColor="?themeBackgroundColor"
+            android:id="@+id/Text"
+            android:text="Pisanie"
+            style="@style/Button"/>
+        <Button
+            android:background="?txtColor"
+            android:textColor="?themeBackgroundColor"
+            android:id="@+id/Check"
+            android:text="Wybieranie"
+            style="@style/Button"/>
+        <Button
+            android:background="?txtColor"
+            android:textColor="?themeBackgroundColor"
+            android:id="@+id/Back"
+            android:text="Powrót"
+            style="@style/Button"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

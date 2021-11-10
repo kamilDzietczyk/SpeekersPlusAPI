@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Letter">
+
+    <LinearLayout
+        android:background="?themeBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            style="@style/menu_top_layout_small"
+            android:onClick="backToMenu">
+            <TextView
+                android:id="@+id/menu"
+                style="@style/textView_top_layout_small"/>
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/menu_top_layout_small_letter">
+            <TextView
+                style="@style/textView_layout_letter_small" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/activity_contener"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp">
+            <ImageView
+                style="@style/activity_image"/>
+        </RelativeLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3">
+            <ImageButton
+                android:id="@+id/previous"
+                android:src="@drawable/ic_prev"
+                android:onClick="buttonPrevious"
+                style="@style/smallButton_small" />
+            <ImageButton
+                android:id="@+id/play"
+                android:src="@drawable/ic_play"
+                android:onClick="buttonPlay"
+                android:textStyle="bold"
+                android:textSize="9dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="95dp"
+                android:layout_height="40dp"/>
+            <ImageButton
+                android:id="@+id/next"
+                android:src="@drawable/ic_next"
+                android:onClick="buttonNext"
+                style="@style/smallButton_small" />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4">
+            <ImageButton
+                android:id="@+id/rec"
+                android:src="@drawable/ic_record"
+                android:onClick="buttonRec"
+                style="@style/smallButton_small"
+                android:layout_gravity="center"/>
+            <ImageButton
+                android:id="@+id/sRec"
+                android:src="@drawable/ic_stop_record"
+                android:onClick="stopRec"
+                style="@style/smallButton_small"/>
+            <ImageButton
+                android:id="@+id/playRec"
+                android:src="@drawable/ic_play"
+                android:onClick="playRec"
+                style="@style/smallButton_small" />
+            <ImageButton
+                android:id="@+id/deleteRec"
+                android:text="DEL"
+                android:src="@drawable/ic_delete"
+                android:onClick="deleteFile"
+                style="@style/smallButton_small"/>
+        </GridLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
